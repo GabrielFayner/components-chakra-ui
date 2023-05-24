@@ -3,20 +3,18 @@ import { Table, Box } from "@chakra-ui/react";
 
 export const TableCustom = styled(Table)`
    tr:nth-of-type(odd) td {
-        background: #EDF2F7 !important;
-    }
+      background: #EDF2F7 !important;
+   }
 `;
 
-export const TextStyled = styled(Box)`
-   width: max-content;
-   padding: 0px 4px;
-   text-transform: uppercase;
-   border-radius: 2px;
-   background-color: red;
+export const HeaderItem = styled(Box)`
+   display: flex;
+   align-items: center;
+   gap: 11px;
+`;
 
-   color: #fff;
-   font-size: 12px;
-   font-weight: 700;
-   font-size: 12px;
-   line-height: 16px;
+export const FooterPagination = styled(Box)`
+   display: flex;
+   padding: 16px 0px;
+   justify-content: flex-end;
 `;
