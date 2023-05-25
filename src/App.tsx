@@ -1,11 +1,13 @@
 import './App.css'
+import CardCustom from './ui/shared/organisms/card-custom'
 
-import TableCustom from './shared/table'
+import LastUpdates from './ui/templates/last-updates'
 
 function App() {
   return (
    <>
-      <TableCustom />
+      <LastUpdates />
+      <CardCustom />
     </>
   )
 }

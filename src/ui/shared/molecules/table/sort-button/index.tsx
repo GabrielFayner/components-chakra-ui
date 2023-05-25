@@ -9,8 +9,8 @@ interface Props {
 const SortButton = ({ active, onClick }: Props) => {
   return (
     <S.ButtonContainer onClick={onClick}>
-      <S.UpIcon color={active === 'asc' ? '#3182CE' : '#4A5568'}/>
-      <S.DownIcon color={active === 'desc' ? '#3182CE' : '#4A5568'} />
+      <S.UpIcon color={active === 'asc' ? '#3182CE' : '#1A202C'}/>
+      <S.DownIcon color={active === 'desc' ? '#3182CE' : '#1A202C'} />
     </S.ButtonContainer>
   )
 }

@@ -1,100 +1,94 @@
 import { Thead, Tbody, Tr, Th, Td, TableContainer } from "@chakra-ui/react";
 import * as S from "./styled";
 import SortButton from "./sort-button";
-import Nametag  from "../nametag";
-import PointsAction from "./points-action";
-import Pagination from "../pagination";
+import Nametag  from "../../atoms/nametag";
+import Pagination from "../../atoms/pagination";
 
 const TableCustom = () => {
   return (
     <TableContainer>
-      <S.TableCustom variant="striped">
+      <S.TableCustom variant="simple">
         <Thead>
           <Tr>
             <Th>
               <S.HeaderItem>
-                INICIATIVA <SortButton onClick={() => {''}} active={null}/>
+                Iniciativa <SortButton onClick={() => {''}} active={null}/>
               </S.HeaderItem>
             </Th>
             <Th>
               <S.HeaderItem>
-                USUÁRIO <SortButton onClick={() => {''}} active={'asc'}/>
+                Usuário <SortButton onClick={() => {''}} active={'asc'}/>
               </S.HeaderItem>
             </Th>
             <Th>
               <S.HeaderItem>
-                TIPO <SortButton onClick={() => {''}} active={'desc'}/>
+                Tipo <SortButton onClick={() => {''}} active={'desc'}/>
               </S.HeaderItem>
             </Th>
             <Th>
               <S.HeaderItem>
-                DATA/HORA <SortButton onClick={() => {''}} active={null} />
+                Data/Hora <SortButton onClick={() => {''}} active={null} />
               </S.HeaderItem>
             </Th>
-            <Th></Th>
           </Tr>
         </Thead>
         <Tbody>
           <Tr>
             <Td>Nome_do_projeto</Td>
-            <Td>Camila Rodrigues Soares</Td>
+            <Td>Nome do Usuário 1</Td>
             <Td>
               <Nametag 
                 size="sm" 
-                color="#fff" 
-                borderRadius="sm"
-                bgColor="#3182CE"
-              >COLETA</Nametag>
+                color="#2A4365" 
+                borderRadius="6px"
+                bgColor="#BEE3F8"
+              >Coleta</Nametag>
             </Td>
             <Td>09/05/22 16:26</Td>
-            <Td><PointsAction/></Td>
           </Tr>
           <Tr>
             <Td>Nome_do_projeto</Td>
-            <Td>João Oliveira Chaves</Td>
+            <Td>Nome do Usuário 2</Td>
             <Td>
               <Nametag 
                 size="sm" 
-                color="#fff" 
-                borderRadius="sm"
-                bgColor="#319795"
-              >EDIÇÃO</Nametag>
+                color="#234E52" 
+                borderRadius="6px"
+                bgColor="#B2F5EA"
+              >Edição</Nametag>
             </Td>
             <Td>09/05/22 16:26</Td>
-            <Td><PointsAction/></Td>
           </Tr>
           <Tr>
             <Td>Nome_do_projeto</Td>
-            <Td>Fernando Pimentel Lopes</Td>
+            <Td>Nome do Usuário 3</Td>
             <Td>
               <Nametag 
                 size="sm" 
-                color="#fff" 
-                borderRadius="sm" 
-                bgColor="#E53E3E"
-              >EXCLUSÃO</Nametag>
+                color="#822727" 
+                borderRadius="6px"
+                bgColor="#FED7D7"
+              >Exclusão</Nametag>
             </Td>
             <Td>09/05/22 16:26</Td>
-            <Td><PointsAction/></Td>
           </Tr>
           <Tr>
             <Td>Nome_do_projeto</Td>
-            <Td>Alexandre Cavalcante S.</Td>
+            <Td>Nome do Usuário 4</Td>
             <Td>
               <Nametag
                 size="sm" 
-                color="#fff" 
-                borderRadius="sm" 
-                bgColor="#38A169"
-              >EXPORTAÇÃO</Nametag>
+                color="#1A202C" 
+                borderRadius="6px"
+                bgColor="#E2E8F0"
+              >Exportação</Nametag>
             </Td>
             <Td>09/05/22 16:26</Td>
-            <Td><PointsAction/></Td>
           </Tr>
         </Tbody>
       </S.TableCustom>
       <S.FooterPagination>
-        <Pagination />
+        <Pagination/>
       </S.FooterPagination>
     </TableContainer>
   );

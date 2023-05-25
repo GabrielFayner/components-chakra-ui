@@ -1,18 +1,13 @@
+import { Button, Menu, MenuList } from "@chakra-ui/react";
 import React from "react";
-import {
-  IconButton,
-  Menu,
-  MenuList,
-} from "@chakra-ui/react";
 import * as S from './styled'
 
-const PointsAction = () => {
+const MenuFilter: React.FC = () => {
   return (
     <Menu>
-      <S.MenuButtonCustom
-        as={IconButton}
-        icon={<S.Points />}
-      />
+      <S.MenuButtonCustom as={Button} leftIcon={<S.FilterIcon />}>
+        Filtrar
+      </S.MenuButtonCustom>
       <MenuList>
         <S.MenuItemCustom>Editar</S.MenuItemCustom>
         <S.MenuItemCustom>Ver detalhes</S.MenuItemCustom>
@@ -20,4 +15,4 @@ const PointsAction = () => {
     </Menu>
   );
 };
-export default PointsAction;
+export default MenuFilter;
