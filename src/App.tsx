@@ -1,11 +1,12 @@
 import './App.css'
-import CardCustom from './ui/shared/organisms/card-custom'
+import CardGraphics from './ui/templates/card-graphics'
+import '@fontsource/poppins'
 
 function App() {
   return (
    <>
       {/* <LastUpdates /> */}
-      <CardCustom />
+      <CardGraphics />
     </>
   )
 }
