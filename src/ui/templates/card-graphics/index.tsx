@@ -2,12 +2,10 @@ import React from "react";
 import { ResponsivePie } from "@nivo/pie";
 import { data, margin } from "./mock";
 import {
-  Box,
   Card,
   CardBody,
   CardHeader,
   Heading,
-  Text,
 } from "@chakra-ui/react";
 import MenuFilter from "../../shared/molecules/menu-filter";
 
